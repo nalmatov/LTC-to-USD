@@ -1,0 +1,386 @@
+/* Global styles */
+:root {
+    --primary-color: #008cff;
+    --dark-blue: #152d43;
+    --light-bg: #eff5f5;
+    --header-blue: #20a3d9;
+    --text-color: #333;
+    --footer-bg: #121920;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --card-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+/* Header styles */
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-info {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 0;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hi-start p {
+    margin-bottom: 0;
+}
+
+.hi-end a {
+    color: white;
+    text-decoration: none;
+}
+
+.graph-up {
+    color: #24ff35;
+    font-weight: 500;
+}
+
+.navbar {
+    background-color: var(--dark-blue);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    font-weight: 600;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-item.active .nav-link {
+    color: white;
+}
+
+/* Main content styles */
+main {
+    flex: 1;
+}
+
+.sec-def {
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.section-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.section-title h1 span {
+    color: var(--primary-color);
+}
+
+.section-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.intro-box {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.stats-box {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.stats-box h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.stat-label {
+    font-weight: 500;
+}
+
+.stat-value {
+    font-weight: 600;
+}
+
+/* About page specific styles */
+.article {
+    margin-bottom: 50px;
+}
+
+.about-image {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.description-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.desc-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 15px;
+    color: var(--dark-blue);
+    display: block;
+}
+
+.desc-text {
+    line-height: 1.6;
+    font-size: 1.05rem;
+    display: block;
+}
+
+/* FAQ accordion styles */
+.accordion {
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    margin: 0;
+}
+
+.accordion-button {
+    background-color: var(--light-bg);
+    border: none;
+    border-radius: 8px;
+    box-shadow: none !important;
+    color: var(--dark-blue);
+    font-weight: 600;
+    position: relative;
+    padding: 15px 20px;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23152d43'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--light-bg);
+    color: var(--primary-color);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23008cff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button span {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-button span::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url("https://ext.same-assets.com/2076888362/2317807771.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.accordion-body {
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    color: #555;
+}
+
+/* Bottom section with blue background */
+.bg-sdr {
+    background-color: var(--light-bg);
+    padding: 50px 0;
+}
+
+.site-desc h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.site-desc h2 span {
+    color: var(--primary-color);
+    display: block;
+}
+
+.site-desc p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.image-container {
+    text-align: center;
+}
+
+/* Footer styles */
+.footer {
+    background-color: var(--footer-bg);
+    color: white;
+}
+
+.footer-logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-ln-main {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.footer h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer .nav-link {
+    color: rgba(255, 255, 255, 0.6);
+    padding: 4px 0;
+    font-size: 0.95rem;
+}
+
+.footer .nav-link:hover {
+    color: white;
+}
+
+/* Markets table styles */
+.markets-table {
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .site-desc h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-image {
+        margin-bottom: 30px;
+    }
+
+    .section-title h1, .main-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-info {
+        padding: 10px 0;
+    }
+
+    .user-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hi-end {
+        margin-top: 5px;
+    }
+
+    .section-title h1, .main-title {
+        font-size: 1.8rem;
+    }
+
+    .site-desc h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .site-desc p {
+        text-align: center;
+    }
+}
+
+/* Specific component styles */
+.wth-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Animations and transitions */
+.animate__fadeInDown {
+    animation-duration: 0.6s;
+}
+
+/* Offcanvas fixes */
+.offcanvas {
+    background-color: var(--dark-blue) !important;
+}
+
+.btn-close-white {
+    filter: invert(1) brightness(200%);
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
