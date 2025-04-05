@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy Litecoin (LTC) in vetted exchangers</title>
+    <meta name="description" content="Our monitoring of exchanges will help you choose the most favorable and reliable online
+    exchange rate among all popular exchanges." />
+    <link href="https://prices-ltc.com/assets/css/fonts.css@2.css" rel="stylesheet" />
+    <link href="https://prices-ltc.com/assets/css/animate.min.css@2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://prices-ltc.com/assets/css/dataTables.bootstrap5.min.css">
+    <link href="https://prices-ltc.com/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://prices-ltc.com/assets/css/styles.css@2.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://prices-ltc.com/assets/img/favicon.svg" type="image/x-icon" />
+    <link rel="icon" href="https://prices-ltc.com/assets/img/favicon.svg@1" type="image/x-icon" />
+</head>
+<body class="d-flex flex-column h-100">
+    <header>
+        <div class="header-info animate__animated animate__fadeInDown">
+            <div class="container h-100">
+                <div class="user-info">
+                    <div class="hi-start">
+                        <p class="wth-icon">
+                            Average cost:
+                            <b id="h-course">1 LTC = $93.360</b>
+                            <!-- <span id="h-procent"><span class="graph-up wth-icon"> +8.90%</span></span> -->
+                        </p>
+                    </div>
+                    <div class="hi-end">
+                        <a href="mailto:info@prices-ltc.com">info@prices-ltc.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Offcanvas navbar large">
+            <div class="container">
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <img src="https://ext.same-assets.com/2076888362/1397213694.svg" alt="Logo" height="40" class="me-2">
+                    <span>PRICES-LTC</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/about.html">About us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/#exchanges">Exchanges</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="/faq.html">FAQ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/terms.html">Rules</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sec-def pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center">
+                        <h1>Frequently Asked <span>Questions</span></h1>
+                    </div>
+                </div>
+                <div class="article mt-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="accordion" id="accordionFAQ">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <img src="https://prices-ltc.com/assets/img/icons/question.svg"/>
+                                            <span>How are the prices calculated for the various cryptocurrencies?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            Please refer to the Market Data section of the methodology for detailed information on this topic.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <img src="https://prices-ltc.com/assets/img/icons/question.svg"/>
+                                            <span>What is "Market Capitalization" and how is it calculated?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            Market Capitalization is one way to rank the relative size of a cryptocurrency. It's calculated by multiplying the Price by the Circulating Supply.
+                                            <br>
+                                            Market Cap = Price X Circulating Supply.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <img src="https://prices-ltc.com/assets/img/icons/question.svg"/>
+                                            <span>What is the difference between "Circulating Supply", "Total Supply", and "Max Supply"?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            Circulating Supply is the best approximation of the number of coins that are circulating in the market and in the general public's hands.
+                                            Total Supply is the total amount of coins in existence right now (minus any coins that have been verifiably burned).
+                                            Max Supply is the best approximation of the maximum amount of coins that will ever exist in the lifetime of the cryptocurrency.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading5">
+                                        <button class="accordion-button collapsed gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                            <img src="https://prices-ltc.com/assets/img/icons/question.svg"/>
+                                            <span>Why is the Circulating Supply used in determining the market capitalization instead of Total Supply?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            We've found that Circulating Supply is a much better metric for determining the market capitalization. Coins that are locked, reserved, or not able to be sold on the public market are coins that can't affect the price and thus should not be allowed to affect the market capitalization as well. The method of using the Circulating Supply is analogous to the method of using public float for determining the market capitalization of companies in traditional investing.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading6">
+                                        <button class="accordion-button collapsed gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                            <img src="https://prices-ltc.com/assets/img/icons/question.svg"/>
+                                            <span>What is the difference between a "Coin" and a "Token" on the site?</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionFAQ">
+                                        <div class="accordion-body">
+                                            A Coin is a cryptocurrency that can operate independently.
+                                            <br><br>
+                                            A Token is a cryptocurrency that depends on another cryptocurrency as a platform to operate. Check out the crypto tokens listings to view a list of tokens and their respective platforms.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-sdr mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-top">
+                        <div class="site-desc">
+                            <h2><span>Live LTC/USDT Rates</span> and Exchange Rankings</h2>
+                            <p class="mt-5">
+                                Track the accurate Litecoin price in USDT by monitoring cryptocurrency exchanges with Prices-LTC and this tool. Stay updated with real-time market data to make informed trading decisions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img src="https://ext.same-assets.com/2076888362/1990978290.png" alt="LTC/USDT" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="row justify-content-center justify-content-lg-start text-center text-lg-start py-5">
+                <div class="col-lg-5 mb-3">
+                    <div class="pe-0 pe-lg-5">
+                        <a href="/" class="footer-logo d-flex align-items-center mb-3">
+                            <img src="https://ext.same-assets.com/2076888362/1397213694.svg" alt="Logo" height="40" class="me-2">
+                            <span>PRICES-LTC</span>
+                        </a>
+                        <p class="text-ln-main mw-copy">
+                            © 2024, prices-ltc.com
+                            — cryptocurrency<br> exchange monitoring
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-3">
+                    <h5>Useful</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="/about.html" class="nav-link p-0">About Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="/terms.html" class="nav-link p-0">Rules</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="/faq.html" class="nav-link p-0">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <h5>Additionally</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="/privacy.html" class="nav-link p-0">Privacy policy</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="/contacts.html" class="nav-link p-0">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-3">
+                    <h5>Contacts</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="mailto:info@prices-ltc.com" class="nav-link p-0">info@prices-ltc.com</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="mailto:support@prices-ltc.com" class="nav-link p-0">support@prices-ltc.com</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="mailto:partners@prices-ltc.com" class="nav-link p-0">partners@prices-ltc.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://prices-ltc.com/assets/js/main.js"></script>
+</body>
+</html>

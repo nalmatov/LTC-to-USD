@@ -1,11 +1,11 @@
-import LTCUSDChart from './components/LTCUSDChart';
-import MarketTable from './components/MarketTable'
+import { Table } from '@mui/material';
 
 
 const App = () => {
   return (
     <>
-      <MarketTable/>
+      <Table/>
+      {/* <MarketTable/> */}
       {/* <LTCUSDChart/> */}
     </>
   )
