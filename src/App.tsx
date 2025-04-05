@@ -1,4 +1,4 @@
-import { Table } from '@mui/material';
+import Table from './components/Table';
 
 
 const App = () => {
