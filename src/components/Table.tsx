@@ -13,7 +13,7 @@ const theader_params = {
   '+2% Depth': 'sort_by=plus_depth',
   '-2% Depth': 'sort_by=minus_depth',
   'Pair': '',
-  '24h Volume': '',
+  '24h Volume': 'sort_by=volume24',
   'Last Updated': '',
 };
 const descending_params = { 'invert': '&descending=true', 'remove': '&descending=false' };
@@ -39,6 +39,8 @@ const Table = () => {
     try {
       const res = await fetch(`${BASE_API}/api/ltc-exchanges?${queryParams}`);
       const data = await res.json();
+
+      console.log(data);
 
       if (data?.data) {
         setCurrencies(data.data);
