@@ -9,11 +9,11 @@ const theader_params = {
   '#': 'sort_by=id',
   'Exchange': 'sort_by=exchange',
   'Price': 'sort_by=price',
-  'Volume %': 'sort_by=volume',
+  'Volume %': 'sort_by=volume_percentage',
   '+2% Depth': 'sort_by=plus_depth',
   '-2% Depth': 'sort_by=minus_depth',
   'Pair': '',
-  '24h Volume': 'sort_by=volume24',
+  '24h Volume': 'sort_by=volume',
   'Last Updated': '',
 };
 const descending_params = { 'invert': '&descending=true', 'remove': '&descending=false' };
