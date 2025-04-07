@@ -94,7 +94,7 @@ const Table = () => {
         <tbody>
           {
             currencies?.slice((page-1)*10, page*10).map((curr: currency, idx) => (
-              <tr key={curr.id}>
+              <tr key={curr.id} onClick={() => window.open(curr.url || '')}>
                 <td scope="row" className="dt-type-numeric sorting_1">{curr.id || idx+1}</td>
                 <td>
                   <div className="wth-icon">
@@ -125,6 +125,7 @@ type currency = {
   exchange: string,
   pair: string,
   price: number,
+  url: string,
   price_percent: string | null,
   plusTwoPercentDepth: string,
   minusTwoPercentDepth: string,
